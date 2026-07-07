@@ -1,0 +1,739 @@
+{
+  "visualizations": {
+    "viz_fAqdgAnD": {
+      "type": "splunk.punchcard",
+      "title": "Active Hosts",
+      "options": {
+        "backgroundColor": "#15161A"
+      },
+      "dataSources": {
+        "primary": "ds_zh1XRYil"
+      }
+    },
+    "viz_f5Rn9XlO": {
+      "type": "splunk.markdown",
+      "options": {
+        "markdown": "**Total Events**",
+        "fontSize": "extraLarge"
+      }
+    },
+    "viz_Gv4T8Edl": {
+      "type": "splunk.pie",
+      "options": {
+        "backgroundColor": "#15161A"
+      },
+      "dataSources": {
+        "primary": "ds_hoDXmuAz_ds_FW49rAx7"
+      },
+      "title": "Top Users"
+    },
+    "viz_l9d636Mo": {
+      "type": "splunk.column",
+      "showProgressBar": false,
+      "showLastUpdated": false,
+      "hideWhenNoData": false,
+      "dataSources": {
+        "primary": "ds_FW49rAx7"
+      },
+      "title": "Sysmon Events by Event ID",
+      "containerOptions": {}
+    },
+    "viz_PmVeYD7U": {
+      "type": "splunk.markdown",
+      "options": {
+        "markdown": "**Process Creation**",
+        "fontSize": "extraLarge"
+      }
+    },
+    "viz_16capbVb": {
+      "type": "splunk.markdown",
+      "options": {
+        "markdown": "**File Creations**",
+        "fontSize": "extraLarge"
+      }
+    },
+    "viz_rnqm1UBP": {
+      "type": "splunk.markdown",
+      "options": {
+        "markdown": "**Powershell Activity**",
+        "fontSize": "extraLarge"
+      }
+    },
+    "viz_SKmPXp6z": {
+      "type": "splunk.markdown",
+      "options": {
+        "markdown": "**Command Prompt Activity**",
+        "fontSize": "extraLarge"
+      }
+    },
+    "viz_rYbmxXcF": {
+      "type": "splunk.rectangle",
+      "options": {
+        "strokeColor": "transparent",
+        "fillColor": "#7B56DB"
+      }
+    },
+    "viz_5bxGKtNU": {
+      "type": "splunk.rectangle",
+      "options": {
+        "strokeColor": "transparent",
+        "fillColor": "#009CEB"
+      }
+    },
+    "viz_Gi7xj4eJ": {
+      "type": "splunk.rectangle",
+      "options": {
+        "strokeColor": "transparent",
+        "fillColor": "#00CDAF"
+      }
+    },
+    "viz_oVjFwVZk": {
+      "type": "splunk.rectangle",
+      "options": {
+        "strokeColor": "transparent",
+        "fillColor": "#DD9900"
+      }
+    },
+    "viz_1v9R6py1": {
+      "type": "splunk.rectangle",
+      "options": {
+        "strokeColor": "transparent",
+        "fillColor": "#FF677B"
+      }
+    },
+    "viz_BBVKToiA": {
+      "type": "splunk.markdown",
+      "options": {
+        "markdown": "# **Windows SOC Monitoring Dashboard**"
+      }
+    },
+    "viz_mBJN3gof": {
+      "type": "splunk.singlevalue",
+      "options": {
+        "backgroundColor": "transparent"
+      },
+      "dataSources": {
+        "primary": "ds_ISFxltwR"
+      }
+    },
+    "viz_JZTDH742": {
+      "type": "splunk.singlevalue",
+      "options": {
+        "backgroundColor": "transparent"
+      },
+      "dataSources": {
+        "primary": "ds_SPULnep6"
+      }
+    },
+    "viz_Nwh2vH6l": {
+      "type": "splunk.singlevalue",
+      "options": {
+        "backgroundColor": "transparent"
+      },
+      "dataSources": {
+        "primary": "ds_sLiKbzhn"
+      }
+    },
+    "viz_dlVT21Sl": {
+      "type": "splunk.singlevalue",
+      "options": {
+        "backgroundColor": "transparent"
+      },
+      "dataSources": {
+        "primary": "ds_6uHDB9Fc"
+      }
+    },
+    "viz_hKGQkNIn": {
+      "type": "splunk.line",
+      "options": {
+        "backgroundColor": "transparent"
+      },
+      "dataSources": {
+        "primary": "ds_RbNqv3XX"
+      }
+    },
+    "viz_9Zu1z3LX": {
+      "type": "splunk.bar",
+      "dataSources": {
+        "primary": "ds_1ocjte7w"
+      },
+      "options": {
+        "backgroundColor": "transparent"
+      }
+    },
+    "viz_Ew0zNCDb": {
+      "type": "splunk.markdown",
+      "options": {
+        "markdown": "**Top Processes**",
+        "fontSize": "large"
+      }
+    },
+    "viz_JLzfzVha": {
+      "type": "splunk.singlevalue",
+      "options": {
+        "backgroundColor": "transparent"
+      },
+      "dataSources": {
+        "primary": "ds_ozpexvgg"
+      }
+    },
+    "viz_sJc3ajBU": {
+      "type": "splunk.markdown",
+      "options": {
+        "markdown": "Windows SOC Monitoring dashboard is for real-time visualization of security events through Sysmon and Splunk.",
+        "fontSize": "custom",
+        "customFontSize": 16
+      }
+    },
+    "viz_APF1g1Qt": {
+      "type": "splunk.table",
+      "options": {
+        "backgroundColor": "#362a46",
+        "tableFormat": {
+          "rowBackgroundColors": "> table | seriesByIndex(0) | pick(tableAltRowBackgroundColorsByBackgroundColor)",
+          "headerAlign": "center",
+          "align": "center",
+          "headerBackgroundColor": "> backgroundColor | setColorChannel(tableHeaderBackgroundColorConfig)",
+          "rowColors": "> rowBackgroundColors | maxContrast(tableRowColorMaxContrast)",
+          "headerColor": "> headerBackgroundColor | maxContrast(tableRowColorMaxContrast)"
+        },
+        "fontSize": "large",
+        "font": "monospace"
+      },
+      "dataSources": {
+        "primary": "ds_CgF8ckGM"
+      }
+    },
+    "viz_1wNGFIa2": {
+      "type": "splunk.markdown",
+      "options": {
+        "markdown": "**Recent Sysmon Events**",
+        "fontSize": "extraLarge"
+      }
+    },
+    "viz_1OFpJhLZ": {
+      "type": "splunk.pie",
+      "dataSources": {
+        "primary": "ds_CH8NmnxH"
+      },
+      "title": "ATT&CK Technniques",
+      "options": {
+        "backgroundColor": "#15161A"
+      }
+    },
+    "viz_o59DgYan": {
+      "type": "splunk.pie",
+      "dataSources": {
+        "primary": "ds_Is19V66i"
+      },
+      "title": "Event Severity Distribution",
+      "options": {
+        "backgroundColor": "#15161A"
+      }
+    },
+    "viz_E61CcT2k": {
+      "type": "splunk.pie",
+      "dataSources": {
+        "primary": "ds_N2jGTURV"
+      },
+      "title": "High-Risk Processes",
+      "options": {
+        "backgroundColor": "#15161A"
+      }
+    }
+  },
+  "dataSources": {
+    "ds_FW49rAx7": {
+      "type": "ds.search",
+      "options": {
+        "query": "index=sysmon\n| stats count by EventCode",
+        "queryParameters": {}
+      },
+      "name": "Events by Event ID"
+    },
+    "ds_hoDXmuAz_ds_FW49rAx7": {
+      "type": "ds.search",
+      "options": {
+        "query": "index=sysmon EventCode=1 \n| top User",
+        "queryParameters": {}
+      },
+      "name": "Top Users"
+    },
+    "ds_slxMrH1H_ds_hoDXmuAz_ds_FW49rAx7": {
+      "type": "ds.search",
+      "options": {
+        "query": "| makeresults count=15 \n| streamstats count \n| eval _time=_time-count*3600\n| eval users=random()%100",
+        "queryParameters": {}
+      },
+      "name": "Active users"
+    },
+    "ds_kBa7cUgt": {
+      "type": "ds.search",
+      "options": {
+        "query": "|makeresults count=100 |streamstats count | eval _time=_time-count*60 | eval memory=random()%100, cpu=random()%100 \n|  fields _time cpu memory",
+        "queryParameters": {}
+      },
+      "name": "Mem and CPU utilization"
+    },
+    "ds_zh1XRYil": {
+      "type": "ds.search",
+      "options": {
+        "query": "index=sysmon \n| top Computer",
+        "queryParameters": {}
+      },
+      "name": "Active Hosts"
+    },
+    "ds_lLMVXz2S": {
+      "type": "ds.search",
+      "options": {
+        "query": "| makeresults \n| eval performance=91, availability=98",
+        "queryParameters": {}
+      },
+      "name": "Performance and Availability"
+    },
+    "ds_ISFxltwR": {
+      "type": "ds.search",
+      "options": {
+        "query": "index=sysmon EventCode=1 \n| stats count"
+      },
+      "name": "Search_1"
+    },
+    "ds_SPULnep6": {
+      "type": "ds.search",
+      "options": {
+        "query": "index=sysmon EventCode=11\n| stats count"
+      },
+      "name": "Search_2"
+    },
+    "ds_sLiKbzhn": {
+      "type": "ds.search",
+      "options": {
+        "query": "index=sysmon EventCode=1 Image=\"*powershell*\" \n| stats count"
+      },
+      "name": "Search_3"
+    },
+    "ds_6uHDB9Fc": {
+      "type": "ds.search",
+      "options": {
+        "query": "index=sysmon EventCode=1 Image=\"*cmd.exe\" \n| stats count"
+      },
+      "name": "Search_4"
+    },
+    "ds_A4hvZYvD": {
+      "type": "ds.search",
+      "options": {
+        "query": "index=sysmon earliest=-5m\n| stats count \n| eval value=if(count>0,100,0)\n| fields value"
+      },
+      "name": "Search_5"
+    },
+    "ds_atJ1GaSF": {
+      "type": "ds.search",
+      "options": {
+        "query": "index=sysmon \n| stats count \n| eval Health=100"
+      },
+      "name": "Search_6"
+    },
+    "ds_UFbva48n": {
+      "type": "ds.search",
+      "options": {
+        "query": "index=sysmon EventCode=1 \n| top User"
+      },
+      "name": "Search_7"
+    },
+    "ds_RbNqv3XX": {
+      "type": "ds.search",
+      "options": {
+        "query": "index=sysmon \n| timechart span=15m count"
+      },
+      "name": "Search_8"
+    },
+    "ds_1ocjte7w": {
+      "type": "ds.search",
+      "options": {
+        "query": "index=sysmon EventCode=1 \n| top Image limit=10"
+      },
+      "name": "Search_9"
+    },
+    "ds_ozpexvgg": {
+      "type": "ds.search",
+      "options": {
+        "query": "index=sysmon \n| stats count"
+      },
+      "name": "Search_10"
+    },
+    "ds_Csgrej4N": {
+      "type": "ds.search",
+      "options": {
+        "query": "index=sysmon \n| table _time EventCode Image User Computer \n| sort -_time \n| head 20"
+      },
+      "name": "Search_11"
+    },
+    "ds_CgF8ckGM": {
+      "type": "ds.search",
+      "options": {
+        "query": "index=sysmon \n| table _time EventCode Image User Computer \n| sort -_time \n| head 20"
+      },
+      "name": "Search_12"
+    },
+    "ds_CH8NmnxH": {
+      "type": "ds.search",
+      "options": {
+        "query": "index=sysmon\r\n| eval Technique=case(\r\nEventCode=1,\"Execution\",\r\nEventCode=3,\"Command and Control\",\r\nEventCode=11,\"Collection\",\r\nEventCode=12 OR EventCode=13 OR EventCode=14,\"Persistence\",\r\nEventCode=22,\"Discovery\",\r\ntrue(),\"Other\")\r\n| stats count by Technique"
+      },
+      "name": "Search_13"
+    },
+    "ds_Is19V66i": {
+      "type": "ds.search",
+      "options": {
+        "query": "index=sysmon\r\n| eval Severity=case(\r\nEventCode IN (1,3),\"High\",\r\nEventCode IN (11,12,13,14),\"Medium\",\r\ntrue(),\"Low\")\r\n| stats count by Severity"
+      },
+      "name": "Search_14"
+    },
+    "ds_N2jGTURV": {
+      "type": "ds.search",
+      "options": {
+        "query": "index=sysmon EventCode=1\r\n| search Image=\"*powershell.exe\" OR Image=\"*cmd.exe\" OR Image=\"*rundll32.exe\" OR Image=\"*regsvr32.exe\" OR Image=\"*mshta.exe\" OR Image=\"*wscript.exe\" OR Image=\"*cscript.exe\"\r\n| stats count by Image\r\n| sort -count"
+      },
+      "name": "Search_15"
+    }
+  },
+  "defaults": {
+    "dataSources": {
+      "ds.search": {
+        "options": {
+          "queryParameters": {
+            "latest": "$global_time.latest$",
+            "earliest": "$global_time.earliest$"
+          }
+        }
+      }
+    }
+  },
+  "inputs": {
+    "input_CDJ4CK9c": {
+      "options": {
+        "defaultValue": "-24h@h,now",
+        "token": "global_time"
+      },
+      "title": "Global Time Range",
+      "type": "input.timerange"
+    }
+  },
+  "description": "Real-time monitoring of Windows endpoint security events, process activity, and threat indicators using Splunk and Sysmon",
+  "title": "Windows Security Health Monitoring",
+  "layout": {
+    "tabs": {
+      "items": [
+        {
+          "layoutId": "layout_1",
+          "label": "New tab"
+        }
+      ]
+    },
+    "layoutDefinitions": {
+      "layout_1": {
+        "type": "absolute",
+        "options": {
+          "width": 1440,
+          "height": 1500,
+          "display": "auto",
+          "backgroundImage": {
+            "x": 0,
+            "y": 0,
+            "src": "/static/app/splunk-dashboard-studio/images/examples-hub/application-health-monitoring/monitoring-background.png",
+            "w": 2880,
+            "h": 1920
+          }
+        },
+        "structure": [
+          {
+            "item": "viz_fAqdgAnD",
+            "type": "block",
+            "position": {
+              "x": 740,
+              "y": 580,
+              "w": 680,
+              "h": 360
+            }
+          },
+          {
+            "item": "viz_f5Rn9XlO",
+            "type": "block",
+            "position": {
+              "x": 40,
+              "y": 110,
+              "w": 140,
+              "h": 40
+            }
+          },
+          {
+            "item": "viz_Gv4T8Edl",
+            "type": "block",
+            "position": {
+              "x": 450,
+              "y": 580,
+              "w": 280,
+              "h": 180
+            }
+          },
+          {
+            "item": "viz_l9d636Mo",
+            "type": "block",
+            "position": {
+              "x": 450,
+              "y": 770,
+              "w": 280,
+              "h": 170
+            }
+          },
+          {
+            "item": "viz_PmVeYD7U",
+            "type": "block",
+            "position": {
+              "x": 210,
+              "y": 110,
+              "w": 170,
+              "h": 40
+            }
+          },
+          {
+            "item": "viz_16capbVb",
+            "type": "block",
+            "position": {
+              "x": 390,
+              "y": 110,
+              "w": 140,
+              "h": 40
+            }
+          },
+          {
+            "item": "viz_rnqm1UBP",
+            "type": "block",
+            "position": {
+              "x": 560,
+              "y": 100,
+              "w": 140,
+              "h": 40
+            }
+          },
+          {
+            "item": "viz_SKmPXp6z",
+            "type": "block",
+            "position": {
+              "x": 720,
+              "y": 100,
+              "w": 170,
+              "h": 40
+            }
+          },
+          {
+            "item": "viz_rYbmxXcF",
+            "type": "block",
+            "position": {
+              "x": 40,
+              "y": 150,
+              "w": 150,
+              "h": 10
+            }
+          },
+          {
+            "item": "viz_5bxGKtNU",
+            "type": "block",
+            "position": {
+              "x": 210,
+              "y": 150,
+              "w": 150,
+              "h": 10
+            }
+          },
+          {
+            "item": "viz_Gi7xj4eJ",
+            "type": "block",
+            "position": {
+              "x": 380,
+              "y": 150,
+              "w": 150,
+              "h": 10
+            }
+          },
+          {
+            "item": "viz_oVjFwVZk",
+            "type": "block",
+            "position": {
+              "x": 540,
+              "y": 150,
+              "w": 150,
+              "h": 10
+            }
+          },
+          {
+            "item": "viz_1v9R6py1",
+            "type": "block",
+            "position": {
+              "x": 710,
+              "y": 150,
+              "w": 150,
+              "h": 10
+            }
+          },
+          {
+            "item": "viz_BBVKToiA",
+            "type": "block",
+            "position": {
+              "x": 50,
+              "y": 10,
+              "w": 590,
+              "h": 40
+            }
+          },
+          {
+            "item": "viz_mBJN3gof",
+            "type": "block",
+            "position": {
+              "x": 200,
+              "y": 170,
+              "w": 170,
+              "h": 50
+            }
+          },
+          {
+            "item": "viz_JZTDH742",
+            "type": "block",
+            "position": {
+              "x": 360,
+              "y": 170,
+              "w": 180,
+              "h": 50
+            }
+          },
+          {
+            "item": "viz_Nwh2vH6l",
+            "type": "block",
+            "position": {
+              "x": 540,
+              "y": 170,
+              "w": 150,
+              "h": 50
+            }
+          },
+          {
+            "item": "viz_dlVT21Sl",
+            "type": "block",
+            "position": {
+              "x": 700,
+              "y": 170,
+              "w": 170,
+              "h": 50
+            }
+          },
+          {
+            "item": "viz_hKGQkNIn",
+            "type": "block",
+            "position": {
+              "x": 30,
+              "y": 240,
+              "w": 870,
+              "h": 330
+            }
+          },
+          {
+            "item": "viz_9Zu1z3LX",
+            "type": "block",
+            "position": {
+              "x": 20,
+              "y": 590,
+              "w": 410,
+              "h": 300
+            }
+          },
+          {
+            "item": "viz_Ew0zNCDb",
+            "type": "block",
+            "position": {
+              "x": 110,
+              "y": 570,
+              "w": 210,
+              "h": 40
+            }
+          },
+          {
+            "item": "viz_JLzfzVha",
+            "type": "block",
+            "position": {
+              "x": 30,
+              "y": 170,
+              "w": 150,
+              "h": 50
+            }
+          },
+          {
+            "item": "viz_sJc3ajBU",
+            "type": "block",
+            "position": {
+              "x": 50,
+              "y": 50,
+              "w": 780,
+              "h": 40
+            }
+          },
+          {
+            "item": "viz_APF1g1Qt",
+            "type": "block",
+            "position": {
+              "x": 20,
+              "y": 970,
+              "w": 1400,
+              "h": 450
+            }
+          },
+          {
+            "item": "viz_1wNGFIa2",
+            "type": "block",
+            "position": {
+              "x": 50,
+              "y": 940,
+              "w": 210,
+              "h": 40
+            }
+          },
+          {
+            "item": "viz_1OFpJhLZ",
+            "type": "block",
+            "position": {
+              "x": 920,
+              "y": 50,
+              "w": 500,
+              "h": 220
+            }
+          },
+          {
+            "item": "viz_o59DgYan",
+            "type": "block",
+            "position": {
+              "x": 1710,
+              "y": 570,
+              "w": 420,
+              "h": 260
+            }
+          },
+          {
+            "item": "viz_E61CcT2k",
+            "type": "block",
+            "position": {
+              "x": 930,
+              "y": 290,
+              "w": 480,
+              "h": 260
+            }
+          }
+        ]
+      }
+    },
+    "globalInputs": [
+      "input_CDJ4CK9c"
+    ],
+    "options": {
+      "showTitleAndDescription": false
+    }
+  }
+}
