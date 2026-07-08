@@ -70,7 +70,7 @@ Windows SOC Monitoring Dashboard
 
 ## Dashboard Preview
 
-![Windows SOC Dashboard](Screenshots/Dashboard.jpeg)
+![Windows SOC Dashboard](Screenshots/SOC_Monitoring.jpeg)
 
 ---
 
